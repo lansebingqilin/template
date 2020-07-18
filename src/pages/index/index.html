@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://pxx5d4p7h.bkt.clouddn.com/loading.min.css">
+    <script src="http://pyjth0jzs.bkt.clouddn.com/template.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g2-3.5.1/dist/g2.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.10.1/dist/data-set.min.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                    <div class="object" id="object_five"></div>
+                    <div class="object" id="object_six"></div>
+                    <div class="object" id="object_seven"></div>
+                    <div class="object" id="object_eight"></div>
+                    <div class="object" id="object_big"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="content" type="text/html">
+        <header>
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="index1.html">页面一</a>
+                </li>
+                <li>
+                    <a href="index2.html">页面二</a>
+                </li>
+                <li>
+                    <a href="index3.html">页面三</a>
+                </li>
+                <li>
+                    <a href="index4.html">页面四</a>
+                </li>
+                <li>
+                    <a href="index5.html">页面五</a>
+                </li>
+            </ul>
+        </header>
+        <div class="main">
+            <aside></aside>
+            <section>
+                {{each $data as item index}}
+                <h2>{{item}}</h2>
+                {{/each}}
+            </section>
+        </div>
+        <footer></footer>
+    </script>
+</body>
+</html>
